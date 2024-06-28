@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE31960A2C2E417B00A0EABE /* StationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3196092C2E417B00A0EABE /* StationViewController.storyboard */; };
+		CE31960C2C2E42CD00A0EABE /* StationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31960B2C2E42CD00A0EABE /* StationEntity.swift */; };
+		CE31960E2C2E432700A0EABE /* StationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31960D2C2E432700A0EABE /* StationUseCase.swift */; };
+		CE3196102C2E435E00A0EABE /* StationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31960F2C2E435E00A0EABE /* StationRepository.swift */; };
 		CE7C79152C2E3D060023991F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C79142C2E3D060023991F /* AppDelegate.swift */; };
 		CE7C79172C2E3D060023991F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C79162C2E3D060023991F /* SceneDelegate.swift */; };
-		CE7C79192C2E3D060023991F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C79182C2E3D060023991F /* ViewController.swift */; };
-		CE7C791C2C2E3D060023991F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE7C791B2C2E3D060023991F /* Base */; };
+		CE7C79192C2E3D060023991F /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C79182C2E3D060023991F /* StationViewController.swift */; };
 		CE7C791E2C2E3D080023991F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7C791D2C2E3D080023991F /* Assets.xcassets */; };
-		CE7C79212C2E3D080023991F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE7C79202C2E3D080023991F /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3196092C2E417B00A0EABE /* StationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StationViewController.storyboard; sourceTree = "<group>"; };
+		CE31960B2C2E42CD00A0EABE /* StationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationEntity.swift; sourceTree = "<group>"; };
+		CE31960D2C2E432700A0EABE /* StationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationUseCase.swift; sourceTree = "<group>"; };
+		CE31960F2C2E435E00A0EABE /* StationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRepository.swift; sourceTree = "<group>"; };
 		CE7C79112C2E3D060023991F /* EkiDochi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EkiDochi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C79142C2E3D060023991F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7C79162C2E3D060023991F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE7C79182C2E3D060023991F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE7C791B2C2E3D060023991F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE7C79182C2E3D060023991F /* StationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
 		CE7C791D2C2E3D080023991F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE7C79202C2E3D080023991F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7C79222C2E3D080023991F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,15 +60,41 @@
 		CE7C79132C2E3D060023991F /* EkiDochi */ = {
 			isa = PBXGroup;
 			children = (
+				CE7C79282C2E3E190023991F /* Model */,
+				CE7C79292C2E3E340023991F /* View */,
+				CE7C792A2C2E3E3E0023991F /* Controller */,
 				CE7C79142C2E3D060023991F /* AppDelegate.swift */,
 				CE7C79162C2E3D060023991F /* SceneDelegate.swift */,
-				CE7C79182C2E3D060023991F /* ViewController.swift */,
-				CE7C791A2C2E3D060023991F /* Main.storyboard */,
 				CE7C791D2C2E3D080023991F /* Assets.xcassets */,
-				CE7C791F2C2E3D080023991F /* LaunchScreen.storyboard */,
 				CE7C79222C2E3D080023991F /* Info.plist */,
 			);
 			path = EkiDochi;
+			sourceTree = "<group>";
+		};
+		CE7C79282C2E3E190023991F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE31960B2C2E42CD00A0EABE /* StationEntity.swift */,
+				CE31960D2C2E432700A0EABE /* StationUseCase.swift */,
+				CE31960F2C2E435E00A0EABE /* StationRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE7C79292C2E3E340023991F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE7C792A2C2E3E3E0023991F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C79182C2E3D060023991F /* StationViewController.swift */,
+				CE3196092C2E417B00A0EABE /* StationViewController.storyboard */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +155,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE31960A2C2E417B00A0EABE /* StationViewController.storyboard in Resources */,
 				CE7C791E2C2E3D080023991F /* Assets.xcassets in Resources */,
-				CE7C79212C2E3D080023991F /* Base in Resources */,
-				CE7C791C2C2E3D060023991F /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7C79192C2E3D060023991F /* ViewController.swift in Sources */,
+				CE7C79192C2E3D060023991F /* StationViewController.swift in Sources */,
+				CE31960C2C2E42CD00A0EABE /* StationEntity.swift in Sources */,
+				CE3196102C2E435E00A0EABE /* StationRepository.swift in Sources */,
 				CE7C79152C2E3D060023991F /* AppDelegate.swift in Sources */,
+				CE31960E2C2E432700A0EABE /* StationUseCase.swift in Sources */,
 				CE7C79172C2E3D060023991F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CE7C791A2C2E3D060023991F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE7C791B2C2E3D060023991F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CE7C791F2C2E3D080023991F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE7C79202C2E3D080023991F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE7C79232C2E3D080023991F /* Debug */ = {
@@ -297,7 +310,7 @@
 				INFOPLIST_FILE = EkiDochi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = StationViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +338,7 @@
 				INFOPLIST_FILE = EkiDochi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = StationViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
