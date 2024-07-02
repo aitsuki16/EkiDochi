@@ -11,6 +11,10 @@
 		CE31960C2C2E42CD00A0EABE /* StationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31960B2C2E42CD00A0EABE /* StationEntity.swift */; };
 		CE31960E2C2E432700A0EABE /* StationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31960D2C2E432700A0EABE /* StationUseCase.swift */; };
 		CE3196102C2E435E00A0EABE /* StationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31960F2C2E435E00A0EABE /* StationRepository.swift */; };
+		CE3196132C2E746200A0EABE /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3196112C2E746200A0EABE /* StationTableViewCell.swift */; };
+		CE3196142C2E746200A0EABE /* StationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3196122C2E746200A0EABE /* StationTableViewCell.xib */; };
+		CE3196162C313DF400A0EABE /* station20240426free.csv in Resources */ = {isa = PBXBuildFile; fileRef = CE3196152C313DF400A0EABE /* station20240426free.csv */; };
+		CE3196182C32EF5C00A0EABE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3196172C32EF5C00A0EABE /* DataManager.swift */; };
 		CE7C79152C2E3D060023991F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C79142C2E3D060023991F /* AppDelegate.swift */; };
 		CE7C79172C2E3D060023991F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C79162C2E3D060023991F /* SceneDelegate.swift */; };
 		CE7C79192C2E3D060023991F /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C79182C2E3D060023991F /* StationViewController.swift */; };
@@ -22,6 +26,10 @@
 		CE31960B2C2E42CD00A0EABE /* StationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationEntity.swift; sourceTree = "<group>"; };
 		CE31960D2C2E432700A0EABE /* StationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationUseCase.swift; sourceTree = "<group>"; };
 		CE31960F2C2E435E00A0EABE /* StationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationRepository.swift; sourceTree = "<group>"; };
+		CE3196112C2E746200A0EABE /* StationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
+		CE3196122C2E746200A0EABE /* StationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationTableViewCell.xib; sourceTree = "<group>"; };
+		CE3196152C313DF400A0EABE /* station20240426free.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = station20240426free.csv; path = EkiDochi/station20240426free.csv; sourceTree = SOURCE_ROOT; };
+		CE3196172C32EF5C00A0EABE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CE7C79112C2E3D060023991F /* EkiDochi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EkiDochi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C79142C2E3D060023991F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7C79162C2E3D060023991F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,9 +82,11 @@
 		CE7C79282C2E3E190023991F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE3196152C313DF400A0EABE /* station20240426free.csv */,
 				CE31960B2C2E42CD00A0EABE /* StationEntity.swift */,
 				CE31960D2C2E432700A0EABE /* StationUseCase.swift */,
 				CE31960F2C2E435E00A0EABE /* StationRepository.swift */,
+				CE3196172C32EF5C00A0EABE /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,6 +94,8 @@
 		CE7C79292C2E3E340023991F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE3196112C2E746200A0EABE /* StationTableViewCell.swift */,
+				CE3196122C2E746200A0EABE /* StationTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE31960A2C2E417B00A0EABE /* StationViewController.storyboard in Resources */,
+				CE3196162C313DF400A0EABE /* station20240426free.csv in Resources */,
+				CE3196142C2E746200A0EABE /* StationTableViewCell.xib in Resources */,
 				CE7C791E2C2E3D080023991F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,8 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7C79192C2E3D060023991F /* StationViewController.swift in Sources */,
+				CE3196182C32EF5C00A0EABE /* DataManager.swift in Sources */,
 				CE31960C2C2E42CD00A0EABE /* StationEntity.swift in Sources */,
 				CE3196102C2E435E00A0EABE /* StationRepository.swift in Sources */,
+				CE3196132C2E746200A0EABE /* StationTableViewCell.swift in Sources */,
 				CE7C79152C2E3D060023991F /* AppDelegate.swift in Sources */,
 				CE31960E2C2E432700A0EABE /* StationUseCase.swift in Sources */,
 				CE7C79172C2E3D060023991F /* SceneDelegate.swift in Sources */,

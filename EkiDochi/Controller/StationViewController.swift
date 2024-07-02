@@ -6,14 +6,20 @@
 //
 
 import UIKit
+import SwiftData
 
 class StationViewController: UIViewController {
+    private let useCase = StationUseCase(repository: StationRepository())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        if let stations = useCase.loadStations() {
+                    // Process and display stations
+                    for station in stations {
+                        print(station.stationName)
+                    }
+                } else {
+                    print("Failed to load stations")
+                }
     }
-
-
 }
-
