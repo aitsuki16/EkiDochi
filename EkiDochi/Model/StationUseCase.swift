@@ -16,7 +16,7 @@ class StationUseCase {
     }
     
     func loadStations() -> [StationEntity]? {
-        return repository.loadStationsFromCSV(fileName: "stations")
+        return repository.loadStationsFromCSV(fileName: "station")
     }
     
     func saveStations(_ stations: [StationEntity]) {

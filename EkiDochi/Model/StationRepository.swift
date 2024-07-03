@@ -15,12 +15,12 @@ class StationRepository {
             print("CSV file not found")
             return nil
         }
-
+        
         do {
             let csvData = try String(contentsOf: fileURL, encoding: .utf8)
             let rows = csvData.components(separatedBy: "\n").filter { !$0.isEmpty }
             var stations: [StationEntity] = []
-
+            
             for row in rows {
                 let columns = row.components(separatedBy: ",")
                 if columns.count >= 15,
@@ -32,7 +32,7 @@ class StationRepository {
                    let lat = Double(columns[10]),
                    let eStatus = Int(columns[13]),
                    let eSort = Int(columns[14]) {
-
+                    
                     let station = StationEntity(
                         stationCd: stationCd,
                         stationGcd: stationGcd,
@@ -54,12 +54,13 @@ class StationRepository {
                 }
             }
             return stations
+            
         } catch {
             print("Error reading CSV file: \(error)")
             return nil
         }
     }
-
+    
     
     func saveStations(_ stations: [StationEntity]) {
         for station in stations {
