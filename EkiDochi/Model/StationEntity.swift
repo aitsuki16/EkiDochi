@@ -10,7 +10,7 @@ import SwiftData
 
 @Model
 class StationEntity {
-    var id: UUID?
+    @Attribute var id: UUID? = UUID()
     var stationCd: Int
     var stationGcd: Int
     var stationName: String
@@ -28,7 +28,6 @@ class StationEntity {
     var eSort: Int
 
     init(stationCd: Int, stationGcd: Int, stationName: String, stationNameK: String? = nil, stationNameR: String? = nil, lineCd: Int, prefCd: Int, post: String? = nil, address: String, lon: Double, lat: Double, openYmd: String? = nil, closeYmd: String? = nil, eStatus: Int, eSort: Int) {
-        self.id = UUID()
         self.stationCd = stationCd
         self.stationGcd = stationGcd
         self.stationName = stationName
@@ -46,3 +45,4 @@ class StationEntity {
         self.eSort = eSort
     }
 }
+

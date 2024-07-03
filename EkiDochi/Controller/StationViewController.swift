@@ -13,13 +13,25 @@ class StationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        testLoadAndSaveStations()
         if let stations = useCase.loadStations() {
-                    // Process and display stations
-                    for station in stations {
-                        print(station.stationName)
-                    }
-                } else {
-                    print("Failed to load stations")
-                }
+            // display stations
+            for station in stations {
+                print(station.stationName)
+            }
+        } else {
+            print("Failed to load stations")
+        }
+    }
+    
+    //test
+    func testLoadAndSaveStations() {
+        if let stations = useCase.loadStations() {
+            for station in stations {
+                print("Loaded station: \(station.stationName)")
+            }
+            useCase.saveStations(stations)
+        }
     }
 }
+
